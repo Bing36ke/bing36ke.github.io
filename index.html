@@ -9,8 +9,8 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
+            background: linear-gradient(to right, #3498db, #2980b9);
+            color: #fff;
         }
 
         header {
@@ -24,16 +24,22 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0.9);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
         article {
             margin-bottom: 40px;
+            cursor: pointer;
+        }
+
+        article:hover {
+            transform: scale(1.02);
+            transition: transform 0.3s ease-in-out;
         }
 
         h2 {
-            color: #333;
+            color: #2980b9;
         }
 
         footer {
@@ -50,12 +56,12 @@
     </header>
 
     <main>
-        <article>
+        <article onclick="window.location.href='#'">
             <h2>Blog Post Title 1</h2>
             <p>Write your content here...</p>
         </article>
 
-        <article>
+        <article onclick="window.location.href='#'">
             <h2>Blog Post Title 2</h2>
             <p>Write your content here...</p>
         </article>
